@@ -1,0 +1,46 @@
+package Json4delphi;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl;
+
+contains
+  Jsons in 'json\Jsons.pas',
+  JsonsUtilsEx in 'json\JsonsUtilsEx.pas',
+  Json.Reflect.Date in 'json\Reflect\Json.Reflect.Date.pas',
+  Json.Reflect.Dictionary in 'json\Reflect\Json.Reflect.Dictionary.pas',
+  Json.Reflect.Enum in 'json\Reflect\Json.Reflect.Enum.pas',
+  Json.Reflect.Exception in 'json\Reflect\Json.Reflect.Exception.pas',
+  Json.Reflect.Intf in 'json\Reflect\Json.Reflect.Intf.pas',
+  Json.Reflect.List in 'json\Reflect\Json.Reflect.List.pas',
+  Json.Reflect.Model in 'json\Reflect\Json.Reflect.Model.pas',
+  Json.Reflect.Parser in 'json\Reflect\Json.Reflect.Parser.pas',
+  Json.Reflect in 'json\Reflect\Json.Reflect.pas',
+  Json.Reflect.TypeCreator in 'json\Reflect\Json.Reflect.TypeCreator.pas',
+  Json.Reflect.TypeInfo in 'json\Reflect\Json.Reflect.TypeInfo.pas',
+  Json.Reflect.TypeValue in 'json\Reflect\Json.Reflect.TypeValue.pas';
+
+end.
